@@ -1,0 +1,22 @@
+{
+  "napcat_container": {
+    "description": "napcat 容器名",
+    "type": "string",
+    "default": "napcat"
+  },
+  "auto_deploy": {
+    "description": "插件加载时检测守护未运行则自动部署并拉起",
+    "type": "bool",
+    "default": true
+  },
+  "stale_minutes": {
+    "description": "status.txt 超过多少分钟未更新视为守护失联(将重新拉起)",
+    "type": "int",
+    "default": 6
+  },
+  "admin_extra_ids": {
+    "description": "额外允许使用 /守护 指令的QQ号(逗号分隔,平台管理员自动放行)",
+    "type": "string",
+    "default": ""
+  }
+}
